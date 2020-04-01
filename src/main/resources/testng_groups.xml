@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="groups suite">
+
+    <test name="group test">
+        <groups>
+            <define name="all">
+                <include name="car"></include>
+                <include name="bike"></include>
+            </define>
+            <define name="nobike">
+                <include name="suv"></include>
+                <include name="kaka"></include>
+            </define>
+            <run>
+                <include name="nobike"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="Test.GroupsTest"></class>
+        </classes>
+    </test>
+</suite>
