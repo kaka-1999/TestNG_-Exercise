@@ -16,7 +16,7 @@
             </run>
         </groups>
         <classes>
-            <class name="Test.GroupsTest"></class>
+            <class name="Annotation.GroupsTest"></class>
         </classes>
     </test>
 </suite>

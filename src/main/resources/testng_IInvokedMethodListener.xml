@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="IInvokedMethodListener suite">
+    <listeners>
+        <listener class-name="Listener.IInvokedMethodListenerBase"></listener>
+    </listeners>
+    <test name="IInvokedMethodListener test001">
+        <classes>
+            <class name="Listener.TestNG_IInvokedMethodListener"></class>
+        </classes>
+    </test>
+    <test name="IInvokedMethodListener test002">
+        <classes>
+            <class name="Listener.TestNG_IInvokedMethodListener"></class>
+        </classes>
+    </test>
+</suite>

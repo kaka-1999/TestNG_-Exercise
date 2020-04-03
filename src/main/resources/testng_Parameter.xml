@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="parameter suite">
+    <test name="parameter test">
+        <parameter name="brower" value="IE"></parameter>
+        <parameter name="response" value="200,201"></parameter>
+        <classes>
+            <class name="ParameterAndParrallel.ParameterTest"></class>
+        </classes>
+    </test>
+</suite>

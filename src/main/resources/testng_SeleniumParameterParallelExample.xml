@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SeleniumParameterParallelExample suite" parallel="tests" thread-count="2">
+    <test name="SeleniumParameterParallelExample test001">
+        <parameter name="brower" value="ie"></parameter>
+        <classes>
+            <class name="ParameterAndParrallel.SeleniumParameterParallelExample"></class>
+        </classes>
+    </test>
+    <test name="SeleniumParameterParallelExample test002">
+        <parameter name="brower" value="chrome"></parameter>
+        <classes>
+            <class name="ParameterAndParrallel.SeleniumParameterParallelExample"></class>
+        </classes>
+    </test>
+</suite>

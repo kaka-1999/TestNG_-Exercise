@@ -2,13 +2,13 @@
 <suite name="suite_Testname">
     <test name="test_TestCase001">
         <classes>
-            <class name="Test.TestCase001"></class>
+            <class name="Annotation.TestCase001"></class>
 
         </classes>
     </test>
     <test name="test_TestCase002">
         <classes>
-            <class name="Test.TestCase002"></class>
+            <class name="Annotation.TestCase002"></class>
         </classes>
     </test>
 </suite>

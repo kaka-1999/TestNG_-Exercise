@@ -2,7 +2,7 @@
 <suite name="depend suite">
     <test name="depend test">
         <classes>
-            <class name="Test.DependentTest"></class>
+            <class name="Annotation.DependentTest"></class>
         </classes>
     </test>
 </suite>
