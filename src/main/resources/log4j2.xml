@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Configuration>
+    <Properties>
+        <Property name="basepath">
+            ./logs
+        </Property>
+    </Properties>
+    <Appenders>
+        <!--第一天文件名为app.log，第二天以后文件名按日期展示-->
+        <RollingFile name="File" fileName="${basepath}/app.log" filePattern="{basepath}/app-%d{yyyy-MM-dd}.log">
+            <!--设置日志格式-->
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5lenvel %C{2} -%msg%n"/>
+            <Policies>
+                <!--按天分日志文件-->
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <!--按大小分日志文件-->
+                <SizeBasedTriggeringPolicy size="100 MB"/>
+            </Policies>
+        </RollingFile>
+        <Console name="Console">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5lenvel %C{2} -%msg%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <!--name：包名
+        level：日志级别
+        additivity：1.若是additivity设为false，则子Logger只会在自己的appender里输出，不会在root的logger的appender里输出（个人可以理解为additivity设为false后，子Logger会覆盖掉root的logger）。
+                    2.若是additivity设为true，则子Logger不止会在自己的appender里输出，还会在root的logger的appender里输出-->
+        <logger name="Log4j2" level="info" additivity="false">
+            <AppenderRef ref="Console"></AppenderRef>
+        </logger>
+        <Root level="trace">
+            <AppenderRef ref="File"></AppenderRef>
+        </Root>
+    </Loggers>
+</Configuration>

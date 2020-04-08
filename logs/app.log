@@ -1,0 +1,2 @@
+17:02:04.718 Log4j2.LoggerConsole.main(LoggerConsole.java:10)envel Log4j2.LoggerConsole -info message logged
+17:02:04.725 Log4j2.LoggerConsole.main(LoggerConsole.java:11)envel Log4j2.LoggerConsole -error message logged
